@@ -40,10 +40,13 @@ alias lat="ls -AGFoth"
 alias catn="cat -n"
 
 # Fancycat™
-alias c="pygmentize -O style=solarized -f console256 -g"
+alias c="pygmentize -O style=friendly -f console256 -g"
 
 # “What was that alias again?” Meta!
 alias aliases="c ~/.dotfiles/bash/bash_aliases"
+
+# Calendar aliases
+alias calendar="calendar -f ~/Dropbox/todo/calendar"
 
 # IP addresses
 alias ip='IP=`dig +short myip.opendns.com @resolver1.opendns.com`; growlnotify -s -a terminal -t "IP Address" -m "${IP}"'

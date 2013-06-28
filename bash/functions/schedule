@@ -1,0 +1,13 @@
+#! /bin/bash
+GREEN="${BOLD}$(tput setaf 6)"
+BOLD="$(tput bold)"
+ALL_OFF="$(tput sgr0)"
+
+function schedule()
+{
+echo -e "\n${GREEN}Schedule a new appointment:${ALL_OFF}"
+read -p "${BOLD}Date:${ALL_OFF} " DATE
+read -p "${BOLD}Description:${ALL_OFF} " DESCRIPTION 
+echo -e ${DATE}'\t'${DESCRIPTION} >> ~/Dropbox/todo/calendar;
+}
+
